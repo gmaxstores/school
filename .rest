@@ -1,0 +1,87 @@
+//localhost api
+
+//get all contacts
+GET http://localhost:3000/students
+
+###
+//get a student by matric number
+GET http://localhost:3000/students/14052146020
+
+###
+//add a new student
+POST http://localhost:3000/students/new HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Jerry",
+    "lastName": "Connor",
+    "email": "jerryconnor@gmail.com",
+    "phoneNumber": "1234567890",
+    "yearOfEntry": 2001,
+    "matricNumber": "14052146005",
+    "age": 28,
+    "gender": "male",
+    "address": "#2 dede Rd, abuja",
+    "faculty": "Science",
+    "department": "Physics"
+}
+
+###
+//update a student by matric number
+PUT http://localhost:3000/students/update/14052146004 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Mercy",
+    "lastName": "Dillam",
+    "email": "mercydillam@gmail.com",
+    "phoneNumber": "7066666666",
+    "yearOfEntry": 2025,
+    "matricNumber": "14052146004",
+    "age": 16,
+    "gender": "female",
+    "address": "#5 abc Rd, abuja",
+    "faculty": "Arts",
+    "department": "Fine Arts"
+}
+
+###
+//delete a student by matric number
+DELETE  http://localhost:3000/students/delete/14052146003
+
+
+###
+//get all classes
+GET http://localhost:3000/classes
+
+###
+//get a class by class code and name
+GET http://localhost:3000/classes/101/Maths
+
+###
+//add a new class
+POST http://localhost:3000/classes/new HTTP/1.1
+Content-Type: application/json
+
+{
+    "classCode": "110",
+    "className": "Eng",
+    "duration": "4 months",
+    "creditUnits": 2
+}
+
+###
+//update a class by class code and name
+PUT http://localhost:3000/classes/update/110/Eng HTTP/1.1
+Content-Type: application/json
+
+{
+    "classCode": "110",
+    "className": "English",
+    "duration": "5 months",
+    "creditUnits": 3
+}
+
+###
+//delete a class by class code and name
+DELETE http://localhost:3000/classes/delete/110/English

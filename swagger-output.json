@@ -1,0 +1,201 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "My API",
+    "description": "This API is used to manage students via operations like create, update, delete and retrieve.",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/students/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/students/{matricNumber}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "matricNumber",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/students/new": {
+      "post": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/students/update/{matricNumber}": {
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "matricNumber",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/students/delete/{matricNumber}": {
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "matricNumber",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/classes/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/classes/{classCode}/{className}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "classCode",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "className",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/classes/new": {
+      "post": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/classes/update/{classCode}/{className}": {
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "classCode",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "className",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/classes/delete/{classCode}/{className}": {
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "classCode",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "className",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}
