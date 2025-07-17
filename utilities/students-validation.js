@@ -21,7 +21,7 @@ validate.addStudentRules = () =>{
             .escape()
             .notEmpty()
             .isLength({ min: 11, max: 11})
-            .withMessage("First name is required and must be 11 digits long"),
+            .withMessage("Matric number is required and must be 11 digits long"),
         body("age")
             .trim()
             .escape()
