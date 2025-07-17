@@ -2,47 +2,45 @@
   "swagger": "2.0",
   "info": {
     "title": "My API",
-    "description": "This API is used to manage students via operations like create, update, delete and retrieve.",
-    "version": "1.0.0"
+    "description": "This API is used to manage students via operations like create, update, delete and retrieve."
   },
   "host": "school-dla2.onrender.com",
   "basePath": "/",
+  "tags": [],
   "schemes": [
     "https"
   ],
+  "securityDefinitions": {},
+  "consumes": [],
+  "produces": [],
   "paths": {
     "/": {
       "get": {
+        "tags": [],
         "description": "",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
+        "parameters": [],
+        "responses": {}
       }
     },
     "/api-docs": {
       "get": {
+        "tags": [],
         "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
+        "parameters": [],
+        "responses": {}
       }
     },
     "/students/": {
       "get": {
+        "tags": [],
         "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
+        "parameters": [],
+        "responses": {}
       }
     },
     "/students/{matricNumber}": {
       "get": {
+        "tags": [],
         "description": "",
         "parameters": [
           {
@@ -52,25 +50,63 @@
             "type": "string"
           }
         ],
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
+        "responses": {}
       }
     },
     "/students/new": {
       "post": {
+        "tags": [],
         "description": "",
-        "responses": {
-          "default": {
-            "description": ""
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "address": {
+                  "example": "any"
+                },
+                "phoneNumber": {
+                  "example": "any"
+                },
+                "matricNumber": {
+                  "example": "any"
+                },
+                "faculty": {
+                  "example": "any"
+                },
+                "department": {
+                  "example": "any"
+                },
+                "yearOfEntry": {
+                  "example": "any"
+                },
+                "age": {
+                  "example": "any"
+                },
+                "gender": {
+                  "example": "any"
+                }
+              }
+            }
           }
-        }
+        ],
+        "responses": {}
       }
     },
     "/students/update/{matricNumber}": {
       "put": {
+        "tags": [],
         "description": "",
         "parameters": [
           {
@@ -80,15 +116,12 @@
             "type": "string"
           }
         ],
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
+        "responses": {}
       }
     },
     "/students/delete/{matricNumber}": {
       "delete": {
+        "tags": [],
         "description": "",
         "parameters": [
           {
@@ -98,25 +131,20 @@
             "type": "string"
           }
         ],
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
+        "responses": {}
       }
     },
     "/classes/": {
       "get": {
+        "tags": [],
         "description": "",
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
+        "parameters": [],
+        "responses": {}
       }
     },
     "/classes/{classCode}/{className}": {
       "get": {
+        "tags": [],
         "description": "",
         "parameters": [
           {
@@ -132,25 +160,42 @@
             "type": "string"
           }
         ],
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
+        "responses": {}
       }
     },
     "/classes/new": {
       "post": {
+        "tags": [],
         "description": "",
-        "responses": {
-          "default": {
-            "description": ""
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "className": {
+                  "example": "any"
+                },
+                "classCode": {
+                  "example": "any"
+                },
+                "duration": {
+                  "example": "any"
+                },
+                "creditUnits": {
+                  "example": "any"
+                }
+              }
+            }
           }
-        }
+        ],
+        "responses": {}
       }
     },
     "/classes/update/{classCode}/{className}": {
       "put": {
+        "tags": [],
         "description": "",
         "parameters": [
           {
@@ -166,15 +211,12 @@
             "type": "string"
           }
         ],
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
+        "responses": {}
       }
     },
     "/classes/delete/{classCode}/{className}": {
       "delete": {
+        "tags": [],
         "description": "",
         "parameters": [
           {
@@ -190,12 +232,9 @@
             "type": "string"
           }
         ],
-        "responses": {
-          "default": {
-            "description": ""
-          }
-        }
+        "responses": {}
       }
     }
-  }
+  },
+  "definitions": {}
 }
