@@ -5,7 +5,7 @@
     "description": "This API is used to manage students via operations like create, update, delete and retrieve.",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "https://school-dla2.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
