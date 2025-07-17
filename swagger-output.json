@@ -114,6 +114,48 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "address": {
+                  "example": "any"
+                },
+                "phoneNumber": {
+                  "example": "any"
+                },
+                "matricNumber": {
+                  "example": "any"
+                },
+                "faculty": {
+                  "example": "any"
+                },
+                "department": {
+                  "example": "any"
+                },
+                "yearOfEntry": {
+                  "example": "any"
+                },
+                "age": {
+                  "example": "any"
+                },
+                "gender": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
         "responses": {}
@@ -209,6 +251,27 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "className": {
+                  "example": "any"
+                },
+                "classCode": {
+                  "example": "any"
+                },
+                "duration": {
+                  "example": "any"
+                },
+                "creditUnits": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
         "responses": {}
