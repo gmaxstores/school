@@ -8,6 +8,7 @@ util.isAuthenticated = (req, res, next) => {
             message: "You are not authenticated. Please log in."
         });
     }
+    next();
 }
 
 
