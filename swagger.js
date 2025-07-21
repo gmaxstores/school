@@ -6,7 +6,7 @@ const doc = {
     description: 'This API is used to manage students via operations like create, update, delete and retrieve.'
   },
   host: 'school-dla2.onrender.com',
-  schemes: ['https']
+  schemes: ['http']
 };
 
 const outputFile = './swagger-output.json';

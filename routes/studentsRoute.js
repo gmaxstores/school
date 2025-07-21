@@ -11,12 +11,12 @@ router.get("/", utilities.handleErrors(studentsController.getAllStudents));
 router.get("/:matricNumber", utilities.handleErrors(studentsController.getStudentByMatricNumber));
 
 //route to create a new student
-router.post("/new", studentsValidator.addStudentRules(), studentsValidator.checkStudentData, utilities.handleErrors(studentsController.addStudent));
+router.post("/new", utilities.isAuthenticated, studentsValidator.addStudentRules(), studentsValidator.checkStudentData, utilities.handleErrors(studentsController.addStudent));
 
 //route to update a student by matric number
-router.put("/update/:matricNumber", studentsValidator.addStudentRules(), studentsValidator.checkStudentData, utilities.handleErrors(studentsController.updateStudentByMatricNumber));
+router.put("/update/:matricNumber", utilities.isAuthenticated, studentsValidator.addStudentRules(), studentsValidator.checkStudentData, utilities.handleErrors(studentsController.updateStudentByMatricNumber));
 
 //route to delete a student by matric number
-router.delete("/delete/:matricNumber", utilities.handleErrors(studentsController.deleteStudentByMatricNumber));
+router.delete("/delete/:matricNumber", utilities.isAuthenticated, utilities.handleErrors(studentsController.deleteStudentByMatricNumber));
 
 module.exports = router;
